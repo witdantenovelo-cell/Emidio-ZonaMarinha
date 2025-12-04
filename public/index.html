@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zonas do Oceano 🌊</title>
+  <link rel="stylesheet" href="style.css" />
+    <!-- Bibliotecas -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.8.0/dist/tf.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+  <!-- Script principal -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🌊 Zonas do Oceano 🌊</h1>
+    <nav>
+      <a href="#intro">Início</a>
+      <a href="#epipelagica">Epipelágica</a>
+      <a href="#mesopelagica">Mesopelágica</a>
+      <a href="#batipelagica">Batipelágica</a>
+      <a href="#abissal">Abissal</a>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2>Descubra as Profundezas do Oceano</h2>
+    <p>
+      O oceano cobre cerca de <strong>71% da superfície da Terra</strong> e é o lar da maior parte da vida do planeta.
+      É dividido em diferentes zonas de profundidade, conhecidas como <em>zonas oceânicas</em>, cada uma com suas próprias condições, pressões e formas de vida.
+    </p>
+    <p>
+      A luz, a temperatura e a pressão mudam drasticamente conforme mergulhamos mais fundo, revelando um mundo cada vez mais misterioso e inexplorado.
+      Até hoje, estima-se que conhecemos menos de <strong>10%</strong> dos seres que vivem nas profundezas oceânicas.
+    </p>
+    <img src="/imagens/20251030_1619_Zonas do Oceano_simple_compose_01k8v8xbj0ftxr3c7jq1d22c5f.png" 
+         alt="Zonas do Oceano" class="zone-img">
+  </section>
+
+  <!-- ZONA EPIPELÁGICA -->
+  <section id="epipelagica">
+    <h2>🌞 Zona Epipelágica (Zona da Luz)</h2>
+    <p>
+      A zona epipelágica se estende até cerca de <strong>200 metros</strong> de profundidade. É a camada iluminada pela luz solar, responsável por grande parte da fotossíntese do planeta.
+    </p>
+    <p>
+      Aqui vivem golfinhos, tartarugas, corais, peixes coloridos, tubarões e milhões de organismos microscópicos chamados <strong>fitoplâncton</strong>.
+    </p>
+    <ul class="curiosidades">
+      <li>💡 <strong>50% do oxigênio</strong> que respiramos vem de algas microscópicas dessa zona.</li>
+      <li>🌈 Os recifes de coral são considerados “as florestas tropicais do mar” por sua enorme biodiversidade.</li>
+      <li>🐠 Os peixes dessa camada têm cores vibrantes e corpos achatados para se esconder entre as plantas marinhas.</li>
+      <li>☀️ A temperatura aqui pode variar de 25°C nos trópicos até 0°C nas regiões polares.</li>
+      <li>🪸 Apenas 1% do oceano é coberto por recifes de coral, mas eles abrigam mais de 25% de todas as espécies marinhas conhecidas.</li>
+    </ul>
+    <img src="/imagens/20251106_1623_Tartaruga Marinha Realista_simple_compose_01k9d9w6w4fz6a2awsrt74k97g.png" alt="Peixes tropicais" class="zone-img">
+    <img src="/imagens/20251113_1559_Coral Vibrante_simple_compose_01k9z9b90ce7xbey1ytp30ancg.png" alt="Recife de coral" class="zone-img">
+  </section>
+
+  <!-- ZONA MESOPELÁGICA -->
+  <section id="mesopelagica">
+    <h2>🌗 Zona Mesopelágica (Zona do Crepúsculo)</h2>
+    <p>
+      Essa zona vai de <strong>200 a 1.000 metros</strong>. Pouca luz chega aqui — o suficiente apenas para um brilho fraco.
+      Nenhuma planta cresce, mas há vida adaptada à penumbra.
+    </p>
+    <p>
+      É o lar de peixes bioluminescentes, lulas, águas-vivas e criaturas estranhas com dentes longos e corpos translúcidos.
+    </p>
+    <ul class="curiosidades">
+      <li>💡 Muitos animais produzem sua própria luz através de <strong>bioluminescência</strong>.</li>
+      <li>🐟 O <strong>peixe-lanterna</strong> é um dos mais comuns dessa zona e brilha como uma estrela no mar.</li>
+      <li>🌙 O fenômeno da <strong>migração vertical diária</strong> ocorre aqui — bilhões de peixes sobem à noite e descem ao amanhecer.</li>
+      <li>🧊 A temperatura cai para cerca de 5°C, e a pressão aumenta rapidamente.</li>
+      <li>🔦 Alguns animais têm olhos grandes e voltados para cima, para capturar o mínimo de luz possível.</li>
+      <li>⚡ Alguns peixes usam luz como armadilha: piscam para atrair presas e as devoram no escuro.</li>
+    </ul>
+    <img src="/imagens/20251113_1603_Peixe-Lanterna Realista_simple_compose_01k9z9g9mbfs4tnxm6y0t8833v.png" alt="Peixe-lanterna" class="zone-img">
+    <img src="/imagens/20251113_1617_Agua Viva Brillante_simple_compose_01k9zacrnef9ev7hme7zmmky2h.png" alt="Água-viva luminosa" class="zone-img">
+    <img src="/imagens/20251030_1600_Zona Batipelágica Marinha_simple_compose_01k8v7tzjne3crw47w1rekj68f.png" alt="Criaturas do oceano profundo" class="zone-img">
+  </section>
+
+  <!-- ZONA BATIPELÁGICA -->
+  <section id="batipelagica">
+    <h2>🌑 Zona Batipelágica (Zona Escura)</h2>
+    <p>
+      De <strong>1.000 a 4.000 metros</strong>, essa é a zona da escuridão completa. Nenhum raio de luz chega até aqui.
+      A pressão é gigantesca — cerca de 400 vezes maior que na superfície.
+    </p>
+    <p>
+      Criaturas daqui são assustadoramente incríveis: o <strong>peixe-diabo-negro</strong> com uma lanterna bioluminescente, a <strong>lula-colossal</strong> e o <strong>peixe-futebol</strong>.
+    </p>
+    <ul class="curiosidades">
+      <li>👁️ A lula-colossal tem olhos do tamanho de um prato — os maiores do mundo animal.</li>
+      <li>💀 O peixe-diabo-negro usa uma luz na cabeça para enganar suas presas.</li>
+      <li>🌡️ A temperatura aqui é quase constante: cerca de 2°C.</li>
+      <li>🐉 Muitos animais têm corpos gelatinosos para resistir à pressão extrema.</li>
+      <li>⚙️ A pressão é tão alta que um ser humano seria esmagado instantaneamente sem proteção.</li>
+      <li>🌌 Cientistas acreditam que há milhões de espécies ainda desconhecidas nessa região.</li>
+    </ul>
+    <img src="/imagens/" alt="Peixe-diabo-negro" class="zone-img">
+    <img src="/imagens/20251030_1600_Zona Batipelágica Marinha_simple_compose_01k8v7tzjpf1mv3nzm604aj4vx.png" alt="Lula colossal" class="zone-img">
+    <img src="/imagens/20251030_1611_Lula Colossal Batipelágica_simple_compose_01k8v8fat9fdpam1kydtaadxfn.png" alt="Fundo profundo" class="zone-img">
+  </section>
+
+  <!-- ZONA ABISSAL -->
+  <section id="abissal">
+    <h2>🌌 Zona Abissal (As Profundezas Extremas)</h2>
+    <p>
+      A partir de <strong>4.000 metros</strong> até cerca de <strong>6.000 metros</strong>, começa a zona abissal.
+      É um lugar silencioso, frio e completamente escuro. Mesmo assim, há vida.
+    </p>
+    <p>
+      Aqui, criaturas vivem próximas às <strong>fontes hidrotermais</strong> — aberturas no fundo do mar que liberam água superaquecida cheia de minerais.
+    </p>
+    <ul class="curiosidades">
+      <li>🔥 A água dessas fontes pode chegar a 400°C, mas não ferve por causa da pressão altíssima.</li>
+      <li>🪱 Vermes tubulares gigantes vivem sem sol, alimentando-se de bactérias que transformam substâncias químicas em energia.</li>
+      <li>🦀 Existem caranguejos albinos, peixes sem olhos e criaturas que sobrevivem em completa escuridão.</li>
+      <li>💎 O solo do fundo do mar contém metais preciosos como manganês, níquel e cobalto.</li>
+      <li>📡 Apenas veículos submersíveis robóticos conseguem alcançar essas profundezas.</li>
+      <li>🌋 As fontes hidrotermais são consideradas um possível local de origem da vida na Terra.</li>
+      <li>🔮 Cientistas acreditam que organismos daqui podem ajudar na medicina e em tecnologias futuras.</li>
+    </ul>
+    <img src="/imagens/20251113_1607_Fonte Hidrotermal_simple_compose_01k9z9qke3f5q9hd0bh0jx76g0.png" alt="Fonte hidrotermal" class="zone-img">
+    <img src="/imagens/20251106_1610_Verme Marinho Realista_simple_compose_01k9d954z0feft2rynwzt7jf4z.png" alt="Verme tubular" class="zone-img">
+    <img src="/imagens/20251030_1626_Fonte Hidrotermal_simple_compose_01k8v99dmrf2x8rcy8f1g3sq4b.png" alt="Zona abissal" class="zone-img">
+  </section>
+
+  <!-- BOTÕES -->
+  <div class="buttons">
+    <button id="abrirIA">🤖 IA de Reconhecimento</button>
+    <button id="btnAbrirChatbot">💬 Chat-bot</button>
+  </div>
+
+  <footer>
+    Criado por <strong>Nicolas</strong> — 2025 © | Site de Curiosidades Marinhas 🌊  
+    <br>“O oceano é mais profundo do que imaginamos — e mais incrível do que podemos sonhar.”
+  </footer>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Robert"
+  agent-id="d396cafd-0d12-4f5a-bed2-ddbb355260d5"
+  language-code="pt-br"
+></df-messenger>
+
+    <!-- Modal da câmera (inicialmente escondido) -->
+  <div id="cameraModal" class="modal" aria-hidden="true" style="display:none;">
+    <div class="modal-content">
+      <button id="fecharModal" class="botao-fechar" title="Fechar">❌</button>
+      <h2 class="modal-title">Reconhecimento Facial</h2>
+      <div class="video-wrap">
+        <video id="video" autoplay muted playsinline></video>
+      </div>
+      <div class="controls">
+        <button id="tirarFoto" class="botao-foto" title="Tirar foto">📸</button>
+      </div>
+      <p id="modalStatus" class="modal-status">Aguardando...</p>
+      <canvas id="fotoCanvas" style="display:none;"></canvas>
+    </div>
+  </div>
+
+</body>
+</html>

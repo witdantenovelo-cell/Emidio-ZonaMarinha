@@ -1,0 +1,292 @@
+/* ======== ESTILO GERAL ======== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #0077be, #001f3f);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ======== CABEÇALHO ======== */
+header {
+  background-color: rgba(0, 0, 80, 0.8);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00cfff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* ======== SEÇÕES ======== */
+section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+section h2 {
+  color: #00cfff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section p {
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.zone-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.curiosidade {
+  background: rgba(0,0,50,0.4);
+  padding: 10px 15px;
+  border-left: 4px solid #00cfff;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* ======== BOTÕES DE IA ======== */
+.buttons {
+  text-align: center;
+  margin: 50px 0;
+}
+
+button {
+  background-color: #00cfff;
+  border: none;
+  color: #001f3f;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0099cc;
+  transform: scale(1.05);
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+  text-align: center;
+  background-color: rgba(0,0,50,0.9);
+  padding: 20px;
+  color: #00cfff;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  line-height: 1.5;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+/* Tablets (telas entre 600px e 1024px) */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  section {
+    margin: 40px 20px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/* Celulares (telas até 600px) */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    margin: 30px 10px;
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  section p {
+    font-size: 0.95rem;
+  }
+
+  .zone-img {
+    border-radius: 8px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 90%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+/* ===== Modal da Câmera ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 30, 60, 0.7); /* Azul escuro translúcido */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0,120,180,0.95), rgba(0,60,100,0.95));
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  max-width: 720px;
+  width: 92%;
+}
+
+.modal-title {
+  color: #ffffff;
+  margin: 6px 0 12px 0;
+  font-size: 18px;
+}
+
+.video-wrap {
+  width: 100%;
+  display:flex;
+  justify-content:center;
+}
+
+video#video {
+  border-radius: 12px;
+  width: 640px;
+  max-width: 100%;
+  height: auto;
+  background: #000;
+}
+
+.controls {
+  display:flex;
+  gap: 14px;
+  margin-top: 12px;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Botão circular foto */
+.botao-foto {
+  background-color: #00c0e8;
+  border: none;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: #00324a;
+}
+
+/* Botão fechar (canto) */
+.botao-fechar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.06);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* status text */
+.modal-status {
+  color: #e0f7ff;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+df-messenger {
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+df-messenger.aberto {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
